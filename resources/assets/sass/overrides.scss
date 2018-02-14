@@ -1,0 +1,86 @@
+
+.logout-li { list-style: none;}
+
+.box { overflow: hidden; position: relative; padding: 1.5rem 2rem; box-shadow: 0px 5px 7px rgba(lightgray, 0.3); display: block;}
+
+.has-text-primary { color: $primary-color !important;}
+
+a.has-text-primary:hover, a.has-text-primary:focus {color: $secondary-color !important;}
+
+
+
+//typografie
+
+h1 { font-family: "proxima-nova"; font-size: 1.3rem; font-weight: light;}
+
+h2 { font-family: "proxima-nova"; font-size: 0.6rem; font-weight: 200;}
+
+h3 { font-family: "proxima-nova"; font-size: 0.6rem; font-weight: 200;}
+
+a, p, th, td { font-family: "proxima-nova"; color: $primary-color}
+
+
+
+.is-bold { font-family: "proxima-nova"; font-weight: 500; }
+
+
+//buttons
+
+.button { border-radius: 50px; border: 1px solid $secondary-color; transition: 300ms; color: $secondary-color; background: none; font-weight: 400; padding: 1.5rem 2rem; font-size: 20px; line-height: 0; }
+
+.button:hover { border: 1px solid $secondary-color; background-color: $secondary-color; color: white;}
+
+.button-alt { border-radius: 50px; border: 1px solid white; transition: 300ms; color: white; background: none; font-weight: 400; padding: 1.5rem 2rem; font-size: 20px; line-height: 0; }
+
+.button-alt:hover { border: 1px solid white; background-color: white; color: $secondary-color;}
+
+
+
+
+
+//forms
+
+.control { margin-bottom: 25px;}
+
+
+
+
+.control .input {
+	width: 100%;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 1.5rem;
+	height: 50px;
+	background-color: white;
+	border-radius: 50px;
+	border: none;
+	box-shadow: 0px 3px 10px rgba(lightgray, 0.4);
+	color: $secondary-color !important;
+	transition: 300ms;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+}
+.control .input:hover { box-shadow: 0px 0px 10px rgba(lightgray, 0.5); }
+.control .input:active, .input:focus { box-shadow: 0px 0px 10px rgba(lightgray, 0.5); }
+
+
+
+
+span.select { height: 100% !important;}
+
+span.select select { height: 100%; border: none; border-radius: 50px; box-shadow: 0px 0px 10px rgba(lightgray, 0.3); color: $secondary-color; transition: 300ms;}
+
+
+
+textarea.textarea { border: none; border-radius: 10px; box-shadow: 0px 3px 10px rgba(lightgray, 0.4); color: $secondary-color; transition: 300ms; }
+
+textarea.textarea:active,
+textarea.textarea:focus,
+textarea.textarea:hover { box-shadow: 0px 0px 10px rgba(lightgray, 0.5); }
+
+
+//tables
+
+.content table thead tr th { font-weight: 400 !important; color: $primary-color; border-bottom: 2px solid $secondary-color;}
+.content table thead tr:hover { background: none;}

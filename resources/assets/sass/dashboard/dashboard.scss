@@ -1,0 +1,40 @@
+.dashboard-body { background-color: $body-bg; min-height: 100vh;}
+
+
+.dashboard-icon { background-image: url(/public/images/icons/dashboard.svg);}
+
+.icon { width: 20px; height: 20px; }
+.icon img { width: 95%; height: 95%; }
+
+.box .is-header { width: 100%; height: 70px; background-color: $secondary-color; position: absolute; top: 0px; left: 0px; margin-bottom: 100px; display: flex; align-items: center; padding: 1.5rem 2rem; }
+
+.has-header { padding-top: 65px !important; }
+
+.box .box-wrapper { width: 90%; height: auto; margin: 0px auto; }
+
+.dashboard-a:hover { color: black !important; }
+
+
+//Jou foto's
+
+.dashboard-images { width: 100%; height: auto; }
+
+.dashboard-image-thumbnail { min-width: 100%; height: auto; }
+
+
+//avatar
+
+.avatar { width: 150px; height: 150px; border-radius: 50%; overflow: hidden; position: relative;}
+
+.avatar img { min-width: 100%; min-height: 100%;}
+
+.avatar-hover { width: 100%; height: 100%; border-radius: 50%; background-color: rgba(0,0,0,0.5); opacity: 0; transform: scale(2); transition: 300ms; position: absolute; z-index: 1; display: flex; justify-content: center; align-items: center; cursor: pointer;}
+
+.avatar:hover .avatar-hover { opacity: 100; transform: scale(1);}
+
+
+//boxes
+
+.box-header-icon { width: 50px; height: 50px; color: $secondary-color; background: none; border: none; transition: 300ms; }
+
+.box-header-icon:hover { color: $secondary-color; }
