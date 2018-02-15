@@ -7,5 +7,5 @@ use GO\Http\Controllers\Controller;
 
 class collectieController extends Controller
 {
-    //
+    
 }

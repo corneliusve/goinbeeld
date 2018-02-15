@@ -1,77 +1,69 @@
-@extends('tools.layouts.app')
+@extends('tools.layouts.default')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Register</div>
 
-                <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('register') }}">
-                        {{ csrf_field() }}
+	<div class="loginwrapper" style="background-image: url({{ asset('images/golf.svg') }});">
+		<div class="container has-items-centered">
+			<div class="formWrapper">
+				<h1 class="is-size-3">Aanmelden</h1>
+				<form action="{{ route('register') }}" method="POST">
 
-                        <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                            <label for="name" class="col-md-4 control-label">Name</label>
+					{{ csrf_field() }}
 
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
+					<div class="field">
+						<div class="control">
+							<input name="name" type="text" class="input {{ $errors->has('name') ? ' is-danger' : '' }}" placeholder="name" required>
+						</div>
 
-                                @if ($errors->has('name'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
+						@if ($errors->has('name'))
+							<p class="help is-danger">{{ $errors->first('email') }}</p>
+						@endif
+					</div>
 
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
+					<div class="field">
+						<div class="control">
+							<input name="email" type="email" class="input {{ $errors->has('email') ? ' is-danger' : '' }}" placeholder="E-mail" required>
+						</div>
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
+						@if ($errors->has('email'))
+							<p class="help is-danger">{{ $errors->first('email') }}</p>
+						@endif
+					</div>
 
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
+					<div class="field">
+						<div class="control">
+							<input name="password" type="password" class="input {{ $errors->has('password') ? ' has-error' : '' }}" placeholder="Wachtwoord" required>
+						</div>
 
-                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label for="password" class="col-md-4 control-label">Password</label>
+						@if ($errors->has('password'))
+							<p class="help is-danger">{{ $errors->first('password') }}</p>
+						@endif
+					</div>
 
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password" required>
+					<div class="field">
+						<div class="control">
+							<input name="password_confirmation" type="password" class="input {{ $errors->has('password') ? ' has-error' : '' }}" placeholder="Wachtwoord Herhalen" required>
+						</div>
+					</div>
 
-                                @if ($errors->has('password'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
+					<div class="field m-t-50">
+						<div class="columns">
+							<div class="column">
+								<input class="m-t-20" type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> <span class="secondary-text-color">Onthoud mij</span>
+							</div>
+							<div class="column">
+								<div class="has-items-right">
+									<button class="button" type="submit">Log in</button>
+								</div>
+							</div>
+						</div>
+					</div>
 
-                        <div class="form-group">
-                            <label for="password-confirm" class="col-md-4 control-label">Confirm Password</label>
+				</form>
+			</div>
 
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
-                            </div>
-                        </div>
+			<p class="m-t-50 has-text-white">Heb je al een account <a href="{{ route('login') }}" class="has-text-white"><strong>Log je hier in</strong></a></p>
+		</div>
+	</div>
 
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Register
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 @endsection

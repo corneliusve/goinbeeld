@@ -2951,7 +2951,7 @@ a.box:active {
   vertical-align: top;
   background-color: white;
   border-color: #dbdbdb;
-  color: #363636;
+  color: #F1F5F9;
   -webkit-box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
           box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
   max-width: 100%;
@@ -2976,22 +2976,22 @@ a.box:active {
 
 .input::-moz-placeholder,
 .textarea::-moz-placeholder {
-  color: rgba(54, 54, 54, 0.3);
+  color: rgba(241, 245, 249, 0.3);
 }
 
 .input::-webkit-input-placeholder,
 .textarea::-webkit-input-placeholder {
-  color: rgba(54, 54, 54, 0.3);
+  color: rgba(241, 245, 249, 0.3);
 }
 
 .input:-moz-placeholder,
 .textarea:-moz-placeholder {
-  color: rgba(54, 54, 54, 0.3);
+  color: rgba(241, 245, 249, 0.3);
 }
 
 .input:-ms-input-placeholder,
 .textarea:-ms-input-placeholder {
-  color: rgba(54, 54, 54, 0.3);
+  color: rgba(241, 245, 249, 0.3);
 }
 
 .input:hover,
@@ -3374,7 +3374,7 @@ a.box:active {
   vertical-align: top;
   background-color: white;
   border-color: #dbdbdb;
-  color: #363636;
+  color: #F1F5F9;
   cursor: pointer;
   display: block;
   font-size: 1em;
@@ -3394,19 +3394,19 @@ a.box:active {
 }
 
 .select select::-moz-placeholder {
-  color: rgba(54, 54, 54, 0.3);
+  color: rgba(241, 245, 249, 0.3);
 }
 
 .select select::-webkit-input-placeholder {
-  color: rgba(54, 54, 54, 0.3);
+  color: rgba(241, 245, 249, 0.3);
 }
 
 .select select:-moz-placeholder {
-  color: rgba(54, 54, 54, 0.3);
+  color: rgba(241, 245, 249, 0.3);
 }
 
 .select select:-ms-input-placeholder {
-  color: rgba(54, 54, 54, 0.3);
+  color: rgba(241, 245, 249, 0.3);
 }
 
 .select select:hover,
@@ -11521,12 +11521,12 @@ label.panel-block:hover {
 }
 
 .has-text-primary {
-  color: #0B3853 !important;
+  color: #004A5F !important;
 }
 
 a.has-text-primary:hover,
 a.has-text-primary:focus {
-  color: #4466F5 !important;
+  color: #59B3EA !important;
 }
 
 h1 {
@@ -11552,7 +11552,7 @@ p,
 th,
 td {
   font-family: "proxima-nova";
-  color: #0B3853;
+  color: #004A5F;
 }
 
 .is-bold {
@@ -11562,10 +11562,10 @@ td {
 
 .button {
   border-radius: 50px;
-  border: 1px solid #4466F5;
+  border: 1px solid #59B3EA;
   -webkit-transition: 300ms;
   transition: 300ms;
-  color: #4466F5;
+  color: #59B3EA;
   background: none;
   font-weight: 400;
   padding: 1.5rem 2rem;
@@ -11574,8 +11574,8 @@ td {
 }
 
 .button:hover {
-  border: 1px solid #4466F5;
-  background-color: #4466F5;
+  border: 1px solid #59B3EA;
+  background-color: #59B3EA;
   color: white;
 }
 
@@ -11595,84 +11595,47 @@ td {
 .button-alt:hover {
   border: 1px solid white;
   background-color: white;
-  color: #4466F5;
+  color: #59B3EA;
 }
 
-.control {
+/*
+*
+	FORM STYLES
+*
+*/
+
+.field {
   margin-bottom: 25px;
 }
 
-.control .input {
+.field .control input {
   width: 100%;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 1.5rem;
-  height: 50px;
-  background-color: white;
-  border-radius: 50px;
+  height: 65px;
+  background-color: #F1F5F9;
+  border-radius: 3px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border: none;
-  -webkit-box-shadow: 0px 3px 10px rgba(211, 211, 211, 0.4);
-          box-shadow: 0px 3px 10px rgba(211, 211, 211, 0.4);
-  color: #4466F5 !important;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-  -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
-  /* Firefox, other Gecko */
-  box-sizing: border-box;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 18px;
+  color: #004A5F;
 }
 
-.control .input:hover {
-  -webkit-box-shadow: 0px 0px 10px rgba(211, 211, 211, 0.5);
-          box-shadow: 0px 0px 10px rgba(211, 211, 211, 0.5);
+.field .control input::-webkit-input-placeholder {
+  color: gray;
 }
 
-.control .input:active,
-.input:focus {
-  -webkit-box-shadow: 0px 0px 10px rgba(211, 211, 211, 0.5);
-          box-shadow: 0px 0px 10px rgba(211, 211, 211, 0.5);
+.field .control input:-ms-input-placeholder {
+  color: gray;
 }
 
-span.select {
-  height: 100% !important;
+.field .control input::-ms-input-placeholder {
+  color: gray;
 }
 
-span.select select {
-  height: 100%;
-  border: none;
-  border-radius: 50px;
-  -webkit-box-shadow: 0px 0px 10px rgba(211, 211, 211, 0.3);
-          box-shadow: 0px 0px 10px rgba(211, 211, 211, 0.3);
-  color: #4466F5;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-}
-
-textarea.textarea {
-  border: none;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 3px 10px rgba(211, 211, 211, 0.4);
-          box-shadow: 0px 3px 10px rgba(211, 211, 211, 0.4);
-  color: #4466F5;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-}
-
-textarea.textarea:active,
-textarea.textarea:focus,
-textarea.textarea:hover {
-  -webkit-box-shadow: 0px 0px 10px rgba(211, 211, 211, 0.5);
-          box-shadow: 0px 0px 10px rgba(211, 211, 211, 0.5);
-}
-
-.content table thead tr th {
-  font-weight: 400 !important;
-  color: #0B3853;
-  border-bottom: 2px solid #4466F5;
-}
-
-.content table thead tr:hover {
-  background: none;
+.field .control input::placeholder {
+  color: gray;
 }
 
 /*
@@ -12077,11 +12040,11 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
 */
 
 .is-primary-background {
-  background-color: #0B3853 !important;
+  background-color: #004A5F !important;
 }
 
 .is-secondary {
-  color: #4466F5;
+  color: #59B3EA;
 }
 
 .is-centered {
@@ -12089,8 +12052,24 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
   margin-right: auto;
 }
 
+.primary-text-color {
+  color: #004A5F;
+}
+
+.primary-background-color {
+  background-color: #004A5F;
+}
+
+.secondary-text-color {
+  color: #59B3EA;
+}
+
+.secondary-background-color {
+  background-color: #59B3EA;
+}
+
 .second-button {
-  background-color: #4466F5;
+  background-color: #59B3EA;
   color: white;
 }
 
@@ -12106,6 +12085,7 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
 
 .has-items-centered {
   width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12115,6 +12095,10 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .has-items-left {
@@ -12173,47 +12157,34 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
           align-items: center;
 }
 
-.landing-hero {
+.loginwrapper {
   width: 100%;
   height: 100vh;
-  background-size: cover;
-  background-position: center center;
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: #004A5F;
   position: relative;
 }
 
-.svg-animatie {
-  width: 200%;
-  height: 100%;
-  position: absolute;
-  left: -100%;
-  -webkit-animation-name: golf_animation;
-          animation-name: golf_animation;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
+.loginwrapper .container {
+  height: 100% !important;
 }
 
-.golf-1 {
-  width: 100%;
-  height: 100%;
-  left: 100%;
-  top: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: absolute;
+.loginwrapper .container .formWrapper {
+  width: 50%;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 55px;
 }
 
-.golf-2 {
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: absolute;
+.loginwrapper .container .formWrapper h1 {
+  color: #59B3EA;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  padding: 25px 0px;
 }
 
 .dashboard-body {
@@ -12238,7 +12209,7 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
 .box .is-header {
   width: 100%;
   height: 70px;
-  background-color: #4466F5;
+  background-color: #59B3EA;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -12322,7 +12293,7 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
 .box-header-icon {
   width: 50px;
   height: 50px;
-  color: #4466F5;
+  color: #59B3EA;
   background: none;
   border: none;
   -webkit-transition: 300ms;
@@ -12330,6 +12301,6 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
 }
 
 .box-header-icon:hover {
-  color: #4466F5;
+  color: #59B3EA;
 }
 

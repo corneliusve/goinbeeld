@@ -1,34 +1,35 @@
-.landing-hero { width: 100%; height: 100vh; background-size: cover; background-position: center center; position: relative; }
+//login styles
 
-.svg-animatie {
-  width: 200%;
-  height: 100%;
-  position: absolute;
-  left: -100%;
-  animation-name: golf_animation;
-  animation-duration: 10s;
-  animation-timing-function: ease-in;
-}
-
-
-.golf-1 {
+.loginwrapper {
 	width: 100%;
-	height: 100%;
-	left: 100%;
-	top: 0;
-	background-size: cover;
-	background-position: center;
+	height: 100vh;
+	background-size: contain;
+	background-position: bottom;
 	background-repeat: no-repeat;
-	position: absolute;
-}
+	background-color: $primary-color;
+	position: relative;
 
-.golf-2 {
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	position: absolute;
+
+	.container {
+		height: 100% !important;
+		.formWrapper {
+			width: 50%;
+			height: auto;
+			background-color: white;
+			border-radius: 10px;
+			padding: 15px 55px;
+
+			h1 {
+
+				color: $secondary-color;
+				font-size: 36px;
+				font-weight: bold;
+				text-align: center;
+				padding: 25px 0px;
+			}
+
+
+		}
+	}
+
 }

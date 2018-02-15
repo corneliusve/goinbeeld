@@ -1,14 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 7677.7 638.9" style="enable-background:new 0 0 7677.7 638.9;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#F1F5F9;}
-</style>
-<g>
-	<path class="st0" d="M1918.8,155.5L1918.8,155.5c-0.2,0-0.3,0-0.5,0c-0.2,0-0.3,0-0.5,0v0C1419.9,156.3,826.7,737-1.2,329v309.9
-		h1919h1h1919V464.8C3018.2,482.8,2416.7,156.3,1918.8,155.5z"/>
-	<path class="st0" d="M5758.2,155.5L5758.2,155.5c-0.2,0-0.3,0-0.5,0c-0.2,0-0.3,0-0.5,0v0c-497.9,0.8-1099.4,327.3-1919,309.3
-		v174.1h1919h1h1919V329C6849.3,737,6256.1,156.3,5758.2,155.5z"/>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-3739 -3573.277 1920.001 637.277">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #59b3ea;
+      }
+    </style>
+  </defs>
+  <path id="Union_8" data-name="Union 8" class="cls-1" d="M1542,1783.276V1146c521.625,0,1052.829,608.719,1920,181.276v456Z" transform="translate(-5281 -4719.276)"/>
 </svg>

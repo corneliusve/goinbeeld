@@ -15,6 +15,11 @@
 </head>
 <body>
     <div id="app">
+		<nav class="navbar">
+
+			<a href="{{ route('account', ['slug' => Auth::user()->slug]) }}" class="navbar-item">Account</a>
+
+		</nav>
 {{--         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">

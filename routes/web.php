@@ -34,3 +34,23 @@ Route::group(['namespace' => 'Auth\Controllers'], function(){
 
 
 Route::get('/home', 'Home\Controllers\HomeController@index')->name('home');
+
+Route::group(['prefix' => '/account', 'middleware' => 'auth'], function(){
+
+	Route::get('/{slug}', 'Users\Controllers\userController@index')->name('account');
+
+});
+
+Route::post('/create', function(){
+
+	$conversation = createConversations(1);
+
+});
+
+Route::get('/show', function(){
+
+	$conversation = showConversation(1);
+
+	dd($conversation);
+
+});
