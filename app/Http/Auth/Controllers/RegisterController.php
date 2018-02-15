@@ -2,11 +2,12 @@
 
 namespace GO\Http\Auth\Controllers;
 
-use App\User;
-use App\Profile;
+
 use GO\App\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+
+use GO\Domain\Users\User;
 
 class RegisterController extends Controller
 {
@@ -52,7 +53,6 @@ class RegisterController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
-			'type' => 'required'
         ]);
     }
 
@@ -67,15 +67,8 @@ class RegisterController extends Controller
     $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
-			'slug' => str_slug($data['name']),
             'password' => bcrypt($data['password']),
-			'type' => $data['type']
         ]);
-
-		Profile::create([
-			'user_id' => $user->id,
-			'avatar' => 'images/avatar-standard.svg'
-		]);
 
 		return $user;
 

@@ -2,6 +2,8 @@
 
 namespace GO\domain\Users;
 
+use GO\Domain\Users\Traits;
+
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 

@@ -7,5 +7,7 @@ use GO\Http\Controllers\Controller;
 
 class cardController extends Controller
 {
-    
+
+	
+
 }
